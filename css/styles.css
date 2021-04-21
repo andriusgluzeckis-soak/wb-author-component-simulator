@@ -1,0 +1,12 @@
+
+
+h1,h2,h3,h4,h5 {
+    font-family: PT Sans, Helvetica, sans-serif;
+    font-size: 14px; /* at native resolution 1870x860*/
+}
+
+#container {
+    width: 1870px; /* current native resolution to be made responsive */
+    height: 860px; /* current native resolution to be made responsive */
+    background-color: white;
+}

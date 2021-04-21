@@ -1,0 +1,539 @@
+
+body {
+    font-family:Arial;
+    background-color: @black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// All below are some of the preexisting variables
+
+
+
+
+
+
+
+
+
+// --------------------------------------------------
+// Font declarations
+// --------------------------------------------------
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700');
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Font family
+// --------------------------------------------------
+@title-family: "Open Sans", sans-serif;
+@body-family: "Open Sans", sans-serif;
+@btn-family: "Open Sans", sans-serif;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Font weights
+// --------------------------------------------------
+@font-weight-light: 300;
+@font-weight-regular: 400;
+@font-weight-bold: 700;
+
+// 100	Thin (Hairline)
+// 200	Extra Light (Ultra Light)
+// 300	Light
+// 400	Normal
+// 500	Medium
+// 600	Semi Bold (Demi Bold)
+// 700	Bold
+// 800	Extra Bold (Ultra Bold)
+// 900	Black (Heavy)
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Line heights
+// --------------------------------------------------
+@title-line-height: 1.2;
+@body-line-height: 1.5;
+@btn-line-height: 1.5;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Globals
+// --------------------------------------------------
+@body-size: 1rem;
+@body-weight: @font-weight-regular;
+
+@instruction-size: 1rem;
+@instruction-family: @body-family;
+@instruction-weight: @font-weight-regular;
+@instruction-line-height: @body-line-height;
+
+@btn-size: 1rem;
+@btn-weight: @font-weight-regular;
+
+@icon-size: 1.5rem;
+@icon-weight: @font-weight-regular;
+@icon-line-height: 1;
+
+@link-size: 1rem;
+@link-family: @body-family;
+@link-weight: @font-weight-regular;
+@link-line-height: @body-line-height;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Menu header
+// --------------------------------------------------
+@menu-title-size: 3rem;
+@menu-title-family: @title-family;
+@menu-title-weight: @font-weight-regular;
+@menu-title-line-height: @title-line-height;
+
+@menu-subtitle-size: 2rem;
+@menu-subtitle-family: @title-family;
+@menu-subtitle-weight: @font-weight-light;
+@menu-subtitle-line-height: @title-line-height;
+
+@menu-body-size: 1.25rem;
+@menu-body-family: @body-family;
+@menu-body-weight: @font-weight-regular;
+@menu-body-line-height: @body-line-height;
+
+@menu-instruction-size: 1.25rem;
+@menu-instruction-family: @body-family;
+@menu-instruction-weight: @font-weight-regular;
+@menu-instruction-line-height: @body-line-height;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Menu item
+// --------------------------------------------------
+@menu-item-title-size: 1.25rem;
+@menu-item-title-family: @title-family;
+@menu-item-title-weight: @font-weight-regular;
+@menu-item-title-line-height: @title-line-height;
+
+@menu-item-body-size: 1rem;
+@menu-item-body-family: @body-family;
+@menu-item-body-weight: @font-weight-light;
+@menu-item-body-line-height: @body-line-height;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Page header
+// --------------------------------------------------
+@page-title-size: 3rem;
+@page-title-family: @title-family;
+@page-title-weight: @font-weight-regular;
+@page-title-line-height: @title-line-height;
+
+@page-subtitle-size: 2rem;
+@page-subtitle-family: @title-family;
+@page-subtitle-weight: @font-weight-light;
+@page-subtitle-line-height: @title-line-height;
+
+@page-body-size: 1.25rem;
+@page-body-family: @body-family;
+@page-body-weight: @font-weight-regular;
+@page-body-line-height: @body-line-height;
+
+@page-instruction-size: 1.25rem;
+@page-instruction-family: @body-family;
+@page-instruction-weight: @font-weight-regular;
+@page-instruction-line-height: @body-line-height;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Page
+// --------------------------------------------------
+@article-title-size: 2.5rem;
+@article-title-family: @title-family;
+@article-title-weight: @font-weight-regular;
+@article-title-line-height: @title-line-height;
+
+@block-title-size: 2.5rem;
+@block-title-family: @title-family;
+@block-title-weight: @font-weight-regular;
+@block-title-line-height: @title-line-height;
+
+@component-title-size: 2.5rem;
+@component-title-family: @title-family;
+@component-title-weight: @font-weight-regular;
+@component-title-line-height: @title-line-height;
+
+@notify-title-size: 2.5rem;
+@notify-title-family: @title-family;
+@notify-title-weight: @font-weight-regular;
+@notify-title-line-height: @title-line-height;
+
+@item-title-size: 1.25rem;
+@item-title-family: @title-family;
+@item-title-weight: @font-weight-regular;
+@item-title-line-height: @title-line-height;
+
+// --------------------------------------------------
+// Pull quote
+// --------------------------------------------------
+@pull-quote-title-size: 2.5rem;
+@pull-quote-title-family: @title-family;
+@pull-quote-title-weight: @font-weight-light;
+@pull-quote-title-line-height: @title-line-height;
+
+@pull-quote-body-size: 2rem;
+@pull-quote-body-family: @body-family;
+@pull-quote-body-weight: @font-weight-light;
+@pull-quote-body-line-height: @body-line-height;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Drawer
+// --------------------------------------------------
+@drawer-item-title-size: 1rem;
+@drawer-item-title-family: @title-family;
+@drawer-item-title-weight: @font-weight-regular;
+@drawer-item-title-line-height: @title-line-height;
+
+@drawer-item-body-size: 0.875rem;
+@drawer-item-body-family: @body-family;
+@drawer-item-body-weight: @font-weight-regular;
+@drawer-item-body-line-height: @body-line-height;
+
+@resources-filter-btn-size: 1rem;
+@resources-filter-btn-family: @btn-family;
+@resources-filter-btn-weight: @font-weight-regular;
+@resources-filter-btn-line-height: @body-line-height;
+// --------------------------------------------------
+
+
+
+
+// --------------------------------------------------
+// Icon
+// --------------------------------------------------
+@icon-padding: 1rem;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Item
+// --------------------------------------------------
+@item-margin: 0.5rem;
+@item-padding: 1rem;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Button
+// --------------------------------------------------
+@btn-margin: 1rem;
+@btn-padding: 1rem;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Page text margin
+// --------------------------------------------------
+@component-instruction-margin: 1rem;
+
+
+
+
+
+
+
+// body {
+//  -webkit-tap-highlight-color: rgba(0,0,0,0);
+// }
+// a, button {-webkit-tap-highlight-color: rgba(0,0,0,0.2);}
+// .icon {
+//  // Fix for iOS devices not displaying icons if hidden then shown
+//  -webkit-transform: translateZ(0);
+// }
+@adapt-device-large: 900em;
+@adapt-device-medium: 760em;
+@adapt-device-small: 520em;
+
+// --------------------------------------------------
+// Screen sizings
+// --------------------------------------------------
+// html = 16px
+
+// 20rem = 320px
+// 32.5rem = 520px
+// 47.5rem = 760px
+// 56.25rem = 900px
+// 80rem = 1280px
+// 90rem = 1440px
+// 120rem = 1920px
+
+@device-width-small: unit(@adapt-device-small, rem);
+@device-width-medium: unit(@adapt-device-medium, rem);
+@device-width-large: unit(@adapt-device-large, rem);
+
+@max-width: 90rem;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Icons
+// --------------------------------------------------
+@icon-size: 1.5rem;
+@icon-padding: 1rem;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Spacings
+// --------------------------------------------------
+@item-margin: 0.5rem;
+@item-padding: 1rem;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Button padding
+// --------------------------------------------------
+@btn-padding: 1rem;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Duration
+// --------------------------------------------------
+@duration: 0.2s;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Colours
+// --------------------------------------------------
+@white: #fff;
+@black: #000;
+
+@green: #378153;
+@red: #da3510;
+
+@background: @black;
+@background-inverted: @white;
+
+@shadow: @black;
+@shadow-inverted: @white;
+
+@validation-success: @green;
+@validation-success-inverted: @white;
+
+@validation-error: @red;
+@validation-error-inverted: @white;
+
+// --------------------------------------------------
+// Block padding
+// --------------------------------------------------
+@block-padding-ver: 4rem;
+@block-padding-hoz: 0.5rem;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Component padding
+// --------------------------------------------------
+@component-padding-hoz: 0.5rem;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Navigation height
+// --------------------------------------------------
+@navigation-height: @icon-size + (@icon-padding * 2);
+// --------------------------------------------------
+
+// --------------------------------------------------
+//
+// --------------------------------------------------
+@focus-outline: 0; // deprecated - reverting to browser outline
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Drawer width
+// --------------------------------------------------
+@drawer-width: 20rem;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Colour definitions
+// --------------------------------------------------
+@grey: #9096A0;
+@greyDark: #4D4D4D;
+@caramel: #85461e;
+@light-caramel: #FFD59A;
+
+// These variables are used to change the colour of text
+// Primary use is for altering the text colour over a background image
+// See ../project/theme-extras.less for block mixin
+// --------------------------------------------------
+@transparent-light: transparent;
+@transparent-dark: transparent;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Body, link, and heading colour
+// --------------------------------------------------
+@font-color: @greyDark;
+@font-color-inverted: @white;
+
+@link: @font-color;
+@link-inverted: @font-color-inverted;
+
+@link-hover: @link;
+@link-inverted-hover: @link-inverted;
+
+@heading-color: @light-caramel;
+@heading-color-inverted: @white;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Items - components
+// --------------------------------------------------
+@item-color: @light-caramel;
+@item-color-inverted: @white;
+
+@item-color-hover: darken(@item-color, 10%);
+@item-color-inverted-hover: @item-color-inverted;
+
+@item-color-selected: darken(@item-color, 20%);
+@item-color-inverted-selected: @item-color-inverted;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Visited - presentation components
+// --------------------------------------------------
+@visited: #727272;
+@visited-inverted: @white;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Buttons
+// --------------------------------------------------
+@btn-color: @greyDark;
+@btn-color-inverted: @white;
+
+@btn-color-hover: darken(@btn-color, 10%);
+@btn-color-inverted-hover: @btn-color-inverted;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Disabled - question components
+// --------------------------------------------------
+@disabled: #DDDDDD;
+@disabled-inverted: @black;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Validation states - question marking
+// --------------------------------------------------
+@validation-success: #065f28;
+@validation-success-inverted: @white;
+
+@validation-error: #ff0000;
+@validation-error-inverted: @white;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Progress
+// --------------------------------------------------
+@progress: @grey;
+@progress-inverted: @white;
+@progress-border: @grey;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Navigation
+// --------------------------------------------------
+@nav: @white;
+@nav-inverted: @grey;
+
+@nav-icon: @nav-inverted;
+@nav-icon-inverted: @nav;
+
+@nav-icon-hover: darken(@nav-icon, 10%);
+@nav-icon-inverted-hover: @nav-icon-inverted;
+
+@nav-progress: @nav-icon-inverted;
+@nav-progress-inverted: @nav-icon;
+@nav-progress-border: @nav-icon-inverted;
+
+@nav-progress-hover: @nav-icon-inverted-hover;
+@nav-progress-inverted-hover: @nav-progress-inverted;
+@nav-progress-border-hover: @nav-progress-border;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Notify
+// --------------------------------------------------
+@notify: @light-caramel;
+@notify-inverted: @white;
+
+@notify-link: @notify-inverted;
+
+@notify-link-hover: @notify-link;
+
+@notify-btn: @btn-color-inverted;
+@notify-btn-inverted: @btn-color;
+
+@notify-btn-hover: darken(@notify-btn, 10%);
+@notify-btn-inverted-hover: @notify-btn-inverted;
+
+@notify-icon: @notify;
+@notify-icon-inverted: @notify-inverted;
+
+@notify-icon-hover: darken(@notify-icon, 10%);
+@notify-icon-inverted-hover: @notify-icon-inverted;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Drawer
+// --------------------------------------------------
+@drawer: @caramel;
+@drawer-inverted: @white;
+
+@drawer-link: @drawer-inverted;
+
+@drawer-link-hover: @drawer-link;
+
+@drawer-icon: @drawer;
+@drawer-icon-inverted: @drawer-inverted;
+
+@drawer-icon-hover: darken(@drawer-icon, 10%);
+@drawer-icon-inverted-hover: @drawer-icon-inverted;
+
+@drawer-item: @drawer;
+@drawer-item-inverted: @drawer-inverted;
+
+@drawer-item-hover: darken(@drawer-item, 10%);
+@drawer-item-inverted-hover: @drawer-item-inverted;
+
+@drawer-item-selected: darken(@drawer-item, 20%);
+@drawer-item-inverted-selected: @drawer-item-inverted;
+
+@drawer-progress: @drawer-item-inverted;
+@drawer-progress-inverted: @drawer-item;
+@drawer-progress-border: @drawer-item-inverted;
+
+@drawer-progress-hover: @drawer-item-inverted-hover;
+@drawer-progress-inverted-hover: @drawer-item-hover;
+@drawer-progress-border-hover: @drawer-progress-border;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Background
+// --------------------------------------------------
+@background: @black;
+@background-inverted: @white;
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Shadow
+// --------------------------------------------------
+@shadow: @black;
+@shadow-inverted: @white;
+// --------------------------------------------------
