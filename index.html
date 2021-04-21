@@ -16,6 +16,7 @@
         "question": "Question text.",
         "instruction": "Drag the words up to ther correct place in the sentence.",
         "questionString": "A is for #. B is for #. C is for #",
+        "answers": "Ball#Cat#Carrot#Car#Dog",
         "correctanswer": "Apple#Ball#Cat",
         "navigation": "Click the forward button to proceed.",
         "correctfeedback": "Well done. That was the correct order.",
@@ -27,8 +28,12 @@
 </head>
 
 <body>
-  <div id="container">
-    <p>hello</p>
+  <div class="container" id="container">
+    <span data-question></span>
+    <span data-task></span>
+    <h1 class="question-string" data-question-string></h1>
+    <div class="answers-block" data-answers>
+    </div>
   </div>
   <script src="./js/scripts.js"></script>
 </body>
